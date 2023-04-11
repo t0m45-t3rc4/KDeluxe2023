@@ -55,8 +55,8 @@
 
   const wordFilters=[];
   const wordFilterUrls = [
-    "https://kdeluxe2023.github.io/KDeluxe2023/wordfilters/kdeluxe.json",
-    "https://kdeluxe2023.github.io/KDeluxe2023/wordfilters/gg.json",
+    "https://raw.githubusercontent.com/t0m45-t3rc4/KDeluxe2023/main/wordfilters/kdeluxe.json",
+    "https://raw.githubusercontent.com/t0m45-t3rc4/KDeluxe2023/main/wordfilters/gg.json",
   ];
 
   async function fetchDataFromAPI(apiEndpoint) {
