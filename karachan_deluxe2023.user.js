@@ -18,7 +18,7 @@
 // @grant        none
 // ==/UserScript==
 // modules will be loaded at this commit in github repo via jsdelivr
-const g_last_commit = "6692c60aacb22bff5b55957dcec3d8bf894196fd";
+const g_last_commit = "e9e88fc60a2fb4f2651e87422bf734fb5f96866c";
 const g_script_version = GM.info.script.version;
 
 // dynamic module loader
@@ -155,8 +155,8 @@ document.addEventListener('readystatechange', event => {
         if (localStorage.o_kdeluxe_blind_mode_tts == 1 && !window.page_special && 'speechSynthesis' in window)
             load_module("modules/blind_mode_tts");
 
-        if (localStorage.o_kdeluxe_new_keyframes == 1 && !window.page_special)
-            load_module("modules/new_keyframe_anims");
+        if (localStorage.o_kdeluxe_new_wordfilters == 1 && !window.page_special)
+            load_module("modules/new_wordfilters");
 
         //if (localStorage.o_kdeluxe_fred_dumper == 1 && !window.page_special && window.fred_opened)
         //    load_module("modules/fred_dumper");
