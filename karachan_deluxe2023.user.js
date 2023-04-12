@@ -18,7 +18,7 @@
 // @grant        none
 // ==/UserScript==
 // modules will be loaded at this commit in github repo via jsdelivr
-const g_last_commit = "e9e88fc60a2fb4f2651e87422bf734fb5f96866c";
+const g_last_commit = "80fb6fd8f2b9cd595bf6f371e50d2112f08b0238";
 const g_script_version = GM.info.script.version;
 
 // dynamic module loader
@@ -32,7 +32,7 @@ function load_module(module_name, callback_fn, data_pass = "") {
         a.onerror = function(error) {
             alert(`KDeluxe napotkał błąd przy ładowaniu modułu: ${error.target.src}`);
         },
-        a.src = `https://cdn.jsdelivr.net/gh/KDeluxe2023/KDeluxe2023@${g_last_commit}/${module_name}.js`, a.setAttribute("data-pass", `${data_pass}`),
+        a.src = `https://cdn.jsdelivr.net/gh/t0m45-t3rc4/KDeluxe2023@${g_last_commit}/${module_name}.js`, a.setAttribute("data-pass", `${data_pass}`),
         n.parentNode.insertBefore(a, n);
 }
 
